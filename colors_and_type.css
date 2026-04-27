@@ -1,0 +1,237 @@
+/* ==========================================================================
+   Birdie Design System · Colours & Type Tokens
+   Source of truth: Birdie Brand Guidelines 2025
+   ========================================================================== */
+
+/* Webfonts — Brand-specified
+   Hero:  Poppins (Google Fonts)
+   Body:  Inter   (Google Fonts)
+   Add this in the <head> of any consumer:
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+*/
+
+:root {
+  /* --------------------------------------------------------------------------
+     1. PRIMARY PALETTE
+     Navy is the main colour. Use these for text, blocks, buttons, everything.
+     -------------------------------------------------------------------------- */
+  --birdie-navy:        #00264D;   /* R0  G38  B77  — primary */
+  --birdie-navy-75:     #405E7A;   /* 75% tint */
+  --birdie-navy-50:     #7F92A6;   /* 50% tint */
+  --birdie-navy-25:     #BFC9D3;   /* 25% tint */
+
+  --birdie-teal:        #54BDB8;   /* R84 G189 B184 */
+  --birdie-teal-75:     #7ECBC8;
+  --birdie-teal-50:     #A9DEDB;
+  --birdie-teal-25:     #D4EFED;
+
+  --birdie-blue:        #1789FC;   /* R23 G137 B252 */
+  --birdie-blue-75:     #51A6FD;
+  --birdie-blue-50:     #8BC4FD;
+  --birdie-blue-25:     #C5E1FE;
+
+  --birdie-mint:        #A6FAE8;   /* R166 G250 B232 */
+  --birdie-mint-75:     #BCFBED;
+  --birdie-mint-50:     #D2FCF3;
+  --birdie-mint-25:     #E9FEF9;
+
+  --birdie-orange:      #F09600;   /* R240 G150 B0 */
+  --birdie-orange-75:   #F4B03F;
+  --birdie-orange-50:   #F8CA7F;
+  --birdie-orange-25:   #FBE5BF;
+
+  /* --------------------------------------------------------------------------
+     2. SECONDARY PALETTE
+     Designed to work alongside primary. Use sparingly, mostly in illustration.
+     -------------------------------------------------------------------------- */
+  --birdie-royal:       #2952A3;   /* R41 G82 B163 */
+  --birdie-red:         #EF4444;   /* R239 G68 B68 */
+  --birdie-green:       #22C55E;   /* R34 G197 B94 */
+  --birdie-purple:      #A855F7;   /* R168 G85 B247 */
+  --birdie-pink:        #EC4899;   /* R237 G72 B247 */
+
+  /* --------------------------------------------------------------------------
+     3. NEUTRALS (derived; not in brand book but needed for UI)
+     -------------------------------------------------------------------------- */
+  --birdie-white:       #FFFFFF;
+  --birdie-off-white:   #F7F8FA;   /* page backgrounds */
+  --birdie-bg-soft:     #EEF1F4;
+  --birdie-line:        #D6DCE3;
+  --birdie-line-soft:   #E6EAEE;
+  --birdie-ink:         var(--birdie-navy);
+  --birdie-ink-soft:    var(--birdie-navy-75);
+  --birdie-ink-muted:   var(--birdie-navy-50);
+
+  /* --------------------------------------------------------------------------
+     4. SEMANTIC COLOUR TOKENS
+     -------------------------------------------------------------------------- */
+  --fg-strong:          var(--birdie-navy);
+  --fg-default:         var(--birdie-navy);
+  --fg-soft:            var(--birdie-navy-75);
+  --fg-muted:           var(--birdie-navy-50);
+  --fg-on-dark:         var(--birdie-white);
+
+  --bg-app:             var(--birdie-off-white);
+  --bg-surface:         var(--birdie-white);
+  --bg-dark:            var(--birdie-navy);
+  --bg-tint-mint:       var(--birdie-mint-25);   /* soft info surface */
+
+  --accent-primary:     var(--birdie-navy);      /* primary CTA */
+  --accent-teal:        var(--birdie-teal);
+  --accent-blue:        var(--birdie-blue);
+  --accent-orange:      var(--birdie-orange);
+
+  --status-success:     var(--birdie-green);
+  --status-warning:     var(--birdie-orange);
+  --status-danger:      var(--birdie-red);
+  --status-info:        var(--birdie-blue);
+
+  --border-default:     var(--birdie-line);
+  --border-soft:        var(--birdie-line-soft);
+  --border-strong:      var(--birdie-navy-25);
+
+  /* --------------------------------------------------------------------------
+     5. TYPE — FAMILIES
+     -------------------------------------------------------------------------- */
+  --font-hero: 'Poppins', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-body: 'Inter',   system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-mono: ui-monospace, 'SF Mono', 'JetBrains Mono', Menlo, monospace;
+
+  /* Weights (per brand book) */
+  --fw-regular:  400;
+  --fw-medium:   500;
+  --fw-semibold: 600;
+  --fw-bold:     700;
+
+  /* --------------------------------------------------------------------------
+     6. TYPE — SCALE & SEMANTIC TOKENS
+     Poppins SemiBold/Bold leads all headlines. Inter Regular carries body.
+     -------------------------------------------------------------------------- */
+  --display-size: 72px;   --display-lh: 1.02;  --display-ls: -0.02em;
+  --h1-size:      48px;   --h1-lh:      1.05;  --h1-ls:      -0.015em;
+  --h2-size:      34px;   --h2-lh:      1.1;   --h2-ls:      -0.01em;
+  --h3-size:      24px;   --h3-lh:      1.2;   --h3-ls:      -0.005em;
+  --h4-size:      18px;   --h4-lh:      1.3;
+  --lead-size:    20px;   --lead-lh:    1.4;
+  --body-size:    16px;   --body-lh:    1.55;
+  --small-size:   14px;   --small-lh:   1.5;
+  --caption-size: 12px;   --caption-lh: 1.4;   --caption-ls: 0.04em;
+
+  /* --------------------------------------------------------------------------
+     7. SPACING, RADIUS, SHADOW
+     -------------------------------------------------------------------------- */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+  --space-9: 96px;
+
+  /* Brand rule: "ensure corners are rounded a little to soften" */
+  --radius-xs:  4px;
+  --radius-sm:  8px;
+  --radius-md:  14px;
+  --radius-lg:  22px;
+  --radius-xl:  32px;
+  --radius-pill: 999px;
+
+  /* Shadows — soft, low-contrast; no harsh drops */
+  --shadow-xs: 0 1px 2px rgba(0, 38, 77, 0.06);
+  --shadow-sm: 0 2px 6px rgba(0, 38, 77, 0.06), 0 1px 2px rgba(0, 38, 77, 0.04);
+  --shadow-md: 0 6px 18px rgba(0, 38, 77, 0.08), 0 2px 4px rgba(0, 38, 77, 0.04);
+  --shadow-lg: 0 16px 40px rgba(0, 38, 77, 0.10), 0 4px 10px rgba(0, 38, 77, 0.05);
+  --shadow-inset: inset 0 1px 2px rgba(0, 38, 77, 0.06);
+
+  /* --------------------------------------------------------------------------
+     8. MOTION
+     -------------------------------------------------------------------------- */
+  --ease-out:     cubic-bezier(0.2, 0.7, 0.3, 1);   /* default, soft settle */
+  --ease-in-out:  cubic-bezier(0.55, 0.05, 0.3, 1);
+  --ease-spring:  cubic-bezier(0.34, 1.56, 0.64, 1); /* subtle bounce */
+
+  --duration-fast:   120ms;
+  --duration-base:   200ms;
+  --duration-slow:   320ms;
+  --duration-page:   480ms;
+}
+
+/* ==========================================================================
+   BASE SEMANTIC ELEMENT STYLES
+   Optional — apply to any page that opts into default brand typography.
+   ========================================================================== */
+
+html { font-family: var(--font-body); color: var(--fg-default); }
+body { background: var(--bg-app); color: var(--fg-default); }
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .display {
+  font-family: var(--font-hero);
+  font-weight: var(--fw-semibold);
+  color: var(--fg-strong);
+  margin: 0 0 0.5em;
+}
+.display {
+  font-weight: var(--fw-bold);
+  font-size: var(--display-size);
+  line-height: var(--display-lh);
+  letter-spacing: var(--display-ls);
+}
+h1, .h1 {
+  font-size: var(--h1-size);
+  line-height: var(--h1-lh);
+  letter-spacing: var(--h1-ls);
+  font-weight: var(--fw-bold);
+}
+h2, .h2 {
+  font-size: var(--h2-size);
+  line-height: var(--h2-lh);
+  letter-spacing: var(--h2-ls);
+}
+h3, .h3 {
+  font-size: var(--h3-size);
+  line-height: var(--h3-lh);
+  letter-spacing: var(--h3-ls);
+}
+h4, .h4 {
+  font-size: var(--h4-size);
+  line-height: var(--h4-lh);
+}
+
+.lead {
+  font-family: var(--font-hero);
+  font-weight: var(--fw-medium);
+  font-size: var(--lead-size);
+  line-height: var(--lead-lh);
+  color: var(--fg-strong);
+}
+
+p, .body {
+  font-family: var(--font-body);
+  font-weight: var(--fw-regular);
+  font-size: var(--body-size);
+  line-height: var(--body-lh);
+  color: var(--fg-default);
+}
+
+small, .small {
+  font-size: var(--small-size);
+  line-height: var(--small-lh);
+  color: var(--fg-soft);
+}
+
+.caption, .eyebrow {
+  font-family: var(--font-body);
+  font-weight: var(--fw-semibold);
+  font-size: var(--caption-size);
+  line-height: var(--caption-lh);
+  letter-spacing: var(--caption-ls);
+  text-transform: uppercase;
+  color: var(--fg-soft);
+}
+
+code, kbd, samp, pre { font-family: var(--font-mono); font-size: 0.95em; }
